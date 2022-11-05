@@ -1,0 +1,119 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+                                }
+
+body{   font-family: 'Open Sans',sans-serif;   }
+
+nav{   background: #02918b;   }
+
+ul{   list-style-type: none; }
+
+a{  text-decoration: none;  }
+
+/*-- NAV start --*/
+
+nav .main-div{           
+             width: 1170px;
+             margin: auto;
+             display: flex;
+             flex-wrap: wrap;
+             align-items: center;
+                                    }
+
+nav .logo{  width: 15%; }
+  
+nav .logo img{    display: block;    }
+
+nav .manu{   width: 85%;    }
+         
+nav .manu ul{ 
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+                                        }
+
+nav .manu ul li a{
+               color: white;
+               font-size: 12px;               
+               font-weight: 800;
+               display: block;
+               padding: 26px 25px;
+               transition: .7s;
+                                        }
+
+nav .manu ul li:hover a{ 
+                     background-color: #cfc91d;
+                     color: black;
+                                                }
+
+/*-- NAV End --*/
+
+/*-- banner start --*/
+
+#img-banner{
+             background: url(../img/banner_bg.jpg);
+               height: 730px ;
+               background-size: cover;
+               background-position: center;
+               position: relative;
+               z-index: 1;               
+}
+
+#img-banner::after{
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: black;
+                    top: 0;
+                    left: 0;
+                    opacity: .5;
+                    z-index: -1;
+}
+
+#img-banner .img-banner-cont{
+                                height: 100%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                justify-content: center;
+                                text-align: center;
+
+}
+
+#img-banner .banner-contant h4{
+                                    font-size: 30px;
+                                    color: white;
+                                    font-weight: 400;
+
+}
+
+#img-banner .banner-contant h1{
+                                    font-size: 68px;
+                                    color: white;
+                                    font-weight: 800;    
+                                    letter-spacing: 25px;
+
+}
+
+#img-banner .banner-contant p{
+                                font-size: 18px;
+                                color: white;
+}
+
+#img-banner .banner-contant img{
+    display:block;
+    margin: 50px auto ;
+}
+
+#img-banner .banner-contant a{
+    font-size: 14px;
+    font-weight: 800;   
+    color: #0b1016;
+    background: #cfc91d;
+    padding: 19px 42px;
+}
+
+/*-- banner end --*/
